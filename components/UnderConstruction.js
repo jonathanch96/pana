@@ -15,7 +15,6 @@ import './UnderConstruction.css'
 const UnderConstruction = () => {
   return (
     <div className="UnderContruction">
-      <div className="background-black"></div>
       <div className="container-floating">
         <div className="floating-header">
           <img
