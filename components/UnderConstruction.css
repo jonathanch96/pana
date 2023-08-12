@@ -1,16 +1,16 @@
-@import url('https://fonts.cdnfonts.com/css/uncut-sans');
+@import url("https://fonts.cdnfonts.com/css/uncut-sans");
 
 @font-face {
-  font-family: 'Lucette';
-  src: url('/fonts/lucette/font/woff2/Lucette-Regularitalic.woff2')
-      format('woff2'),
-    url('/fonts/lucette/font/woff2/Lucette-Regularitalic.woff') format('woff');
+  font-family: "Lucette";
+  src: url("/fonts/lucette/font/woff2/Lucette-Regularitalic.woff2")
+      format("woff2"),
+    url("/fonts/lucette/font/woff2/Lucette-Regularitalic.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 .UnderContruction {
   width: 100%;
-  height: 100%;
+  height: 100dvh;
 }
 body {
   overflow-y: hidden;
@@ -34,6 +34,8 @@ body {
 .swipe-image {
   height: 100vh;
   width: 100vw;
+  object-fit: cover;
+  object-position: center;
 }
 .container-floating {
   width: calc(100%);
@@ -44,12 +46,17 @@ body {
   left: 0;
   z-index: 10;
   color: white;
-  padding: 32px 0 0;
+  display: flex;
 }
 .lucette-font {
   font-family: Lucette;
 }
 .floating-header {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+}
+.floating-header .inner-container {
   padding: 0 40px;
   display: flex;
   align-items: center;
@@ -57,9 +64,16 @@ body {
 }
 .tagline {
   display: inline-block;
+  font-size: 20px;
+}
+.floating-content-wrapper {
+  width: 100%;
+  height: calc(100% - 154px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .floating-content {
-  margin-top: -20px;
   padding: 0 40px;
   display: flex;
   color: #fff;
@@ -67,12 +81,10 @@ body {
   font-size: 14vw;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 100%;
 }
 .floating-content-2 {
   padding: 0 40px;
-  margin-top: -40px;
-  margin-bottom: 20px;
   justify-content: end;
   display: flex;
   color: #fff;
@@ -80,20 +92,93 @@ body {
   font-size: 14vw;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 100%;
 }
 
 .footer {
   width: 100%;
-  height: 150px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   background-color: black;
-  padding: 48px 40px;
+}
+
+.footer .inner-container {
+  padding: 48px;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   gap: 24px;
   flex-wrap: wrap;
+}
+
+.user-select-none {
+  user-select: none;
+}
+@media only screen and (min-width: 1024px) {
+  .floating-header {
+    top: 24px;
+  }
+  .floating-content,
+  .floating-content-2 {
+    font-size: 10vw;
+  }
+  .floating-content-wrapper {
+    height: calc(100% - 99px);
+  }
+  .footer .inner-container {
+    padding: 24px 48px;
+    font-size: 21px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer .inner-container {
+    padding: 30px 48px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .floating-content,
+  .floating-content-2 {
+    font-size: 12vw;
+  }
+}
+@media only screen and (min-width: 1680px) {
+  .floating-header {
+    top: 30px;
+  }
+  .footer .inner-container {
+    padding: 48px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container-floating {
+    padding: 0;
+  }
+
+  .footer .inner-container {
+    padding: 30px 16px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .floating-header {
+    top: 20px;
+  }
+  .floating-header .inner-container {
+    flex-direction: column;
+  }
+  .tagline {
+    margin-top: 10px;
+  }
+  .footer .inner-container {
+    font-size: 14px;
+    line-height: 150%;
+    gap: 14px;
+  }
 }
