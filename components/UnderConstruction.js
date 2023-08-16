@@ -1,17 +1,17 @@
-import data from "../data/under-construction.json";
+import data from '../data/under-construction.json'
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-fade";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import 'swiper/css'
+import 'swiper/css/effect-fade'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 // import required modules
-import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
-import "./UnderConstruction.css";
+import { EffectFade, Navigation, Pagination, Autoplay } from 'swiper/modules'
+import './UnderConstruction.css'
 const UnderConstruction = () => {
   return (
     <div className="UnderContruction">
@@ -20,7 +20,8 @@ const UnderConstruction = () => {
           <div className="inner-container">
             <img
               className="logo"
-              src="https://res.cloudinary.com/decwwfkpi/image/upload/v1691767499/logo_i0rdwh.svg"
+              src="https://res.cloudinary.com/decwwfkpi/image/upload/v1692154706/logo-highres_oyjqvp.png"
+              width={154}
             />
             <div className="tagline user-select-none">
               <span className="lucette-font">Further</span>&nbsp;
@@ -43,7 +44,7 @@ const UnderConstruction = () => {
         </div>
       </div>
       <Swiper
-        effect={"fade"}
+        effect={'fade'}
         navigation={true}
         autoplay={{
           delay: 3000,
@@ -58,7 +59,7 @@ const UnderConstruction = () => {
         ))}
       </Swiper>
     </div>
-  );
-};
+  )
+}
 
-export default UnderConstruction;
+export default UnderConstruction
