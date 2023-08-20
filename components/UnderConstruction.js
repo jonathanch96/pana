@@ -24,7 +24,7 @@ const UnderConstruction = () => {
               width={154}
             />
             <div className="tagline user-select-none">
-              <span className="lucette-font">Further</span>&nbsp;
+              <div className="lucette-font further-text">Further</div>&nbsp;
               <span>THAN LANGUAGE</span>
             </div>
           </div>

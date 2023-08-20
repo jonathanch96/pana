@@ -68,7 +68,7 @@ body {
 }
 .floating-content-wrapper {
   width: 100%;
-  height: calc(100% - 154px);
+  height: calc(100% - 20vh);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,6 +114,20 @@ body {
 
 .user-select-none {
   user-select: none;
+}
+.further-text {
+  display: inline-block;
+}
+@media only screen and (min-width: 768px) {
+  .floating-content,
+  .floating-content-2 {
+    font-size: 18vw;
+    text-align: center;
+  }
+  .footer .inner-container {
+    padding: 56px 48px 104px;
+    font-size: 16px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -164,13 +178,31 @@ body {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .further-text {
+    margin-right: 64px;
+  }
+  .floating-content {
+    font-size: 18vw;
+    padding: 0px;
+    line-height: 100%;
+    text-align: center;
+  }
+  .floating-content-2 {
+    font-size: 18vw;
+    justify-content: center;
+    line-height: 100%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .container-floating {
     padding: 0;
   }
 
   .footer .inner-container {
-    padding: 40px 16px 80px;
+    text-align: center;
+    padding: 40px 40px 80px;
     /* padding: 30px 16px; */
     align-items: center;
     justify-content: center;
@@ -185,11 +217,51 @@ body {
     flex-direction: column;
   }
   .tagline {
-    margin-top: 10px;
+    margin-top: 32px;
+    text-align: center;
+    font-weight: normal;
   }
   .footer .inner-container {
+    padding: 32px 40px 64px;
     font-size: 14px;
     line-height: 150%;
     gap: 14px;
+    text-align: center;
+  }
+  .left {
+    margin-bottom: 48px;
+  }
+}
+
+@media only screen and (max-width: 484px) {
+  .footer .inner-container {
+    padding: 32px 32px 64px;
+    line-height: 150%;
+    gap: 14px;
+    text-align: center;
+  }
+}
+
+/* Styles for screens with a maximum height or less */
+@media screen and (max-height: 672px) {
+  .footer .inner-container {
+    padding: 16px 32px 32px;
+  }
+}
+@media screen and (max-height: 720px) {
+  .floating-content-wrapper {
+    height: calc(100% - 14vh);
+  }
+}
+@media screen and (max-height: 880px) and (min-width: 1024px) {
+  .floating-content,
+  .floating-content-2 {
+    font-size: 15vw;
+  }
+  .floating-content-2 {
+    justify-content: right;
+  }
+  .footer .inner-container {
+    padding: 32px 32px 64px;
   }
 }
