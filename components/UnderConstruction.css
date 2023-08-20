@@ -63,7 +63,8 @@ body {
   justify-content: space-between;
 }
 .tagline {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   font-size: 20px;
 }
 .floating-content-wrapper {
@@ -117,7 +118,21 @@ body {
 }
 .further-text {
   display: inline-block;
+  margin-right: 10px;
 }
+.than-language-text {
+  margin-left: 10px;
+}
+.line {
+  background-color: white;
+  content: '';
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 54px;
+}
+
 @media only screen and (min-width: 768px) {
   .floating-content,
   .floating-content-2 {
@@ -127,6 +142,12 @@ body {
   .footer .inner-container {
     padding: 56px 48px 104px;
     font-size: 16px;
+  }
+  .floating-content {
+    line-height: 100% !important;
+  }
+  .floating-content-2 {
+    line-height: 100% !important;
   }
 }
 
@@ -144,6 +165,12 @@ body {
   .footer .inner-container {
     padding: 54px 48px 104px;
     font-size: 21px;
+  }
+  .floating-content {
+    line-height: 130% !important;
+  }
+  .floating-content-2 {
+    line-height: 130% !important;
   }
 }
 
@@ -179,19 +206,16 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
-  .further-text {
-    margin-right: 64px;
-  }
   .floating-content {
     font-size: 18vw;
     padding: 0px;
-    line-height: 100%;
+    line-height: 130%;
     text-align: center;
   }
   .floating-content-2 {
     font-size: 18vw;
     justify-content: center;
-    line-height: 100%;
+    line-height: 130%;
   }
 }
 

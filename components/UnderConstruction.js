@@ -24,8 +24,9 @@ const UnderConstruction = () => {
               width={154}
             />
             <div className="tagline user-select-none">
-              <div className="lucette-font further-text">Further</div>&nbsp;
-              <span>THAN LANGUAGE</span>
+              <div className="lucette-font further-text">Further</div>
+              <div className='line'></div>
+              <div className='than-language-text'>THAN LANGUAGE</div>
             </div>
           </div>
         </div>
@@ -35,7 +36,7 @@ const UnderConstruction = () => {
         </div>
         <div className="footer">
           <div className="inner-container user-select-none">
-            <div className="left">WE'LL THERE SOON</div>
+            <div className="left">WE'LL BE THERE SOON</div>
             <div className="right">
               BUT WE ARE READY TO GO! WE ARE PREPARING <br />
               SOMETHING AMAZING AND EXCITING FOR YOU.
