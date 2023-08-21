@@ -24,14 +24,17 @@ const UnderConstruction = () => {
               width={154}
             />
             <div className="tagline user-select-none">
-              <div className="lucette-font further-text">Further</div>
-              <div className='line'></div>
-              <div className='than-language-text'>THAN LANGUAGE</div>
+              <div className="lucette-font further-text italic">Further</div>
+              <div className="line"></div>
+              <div className="than-language-text">THAN LANGUAGE</div>
             </div>
           </div>
         </div>
         <div className="floating-content-wrapper user-select-none">
-          <div className="floating-content">We're Making</div>
+          <div className="floating-content flex gap-10" >
+            <span className="italic">We're</span>
+            <span>Making</span>
+          </div>
           <div className="floating-content-2">Something</div>
         </div>
         <div className="footer">
@@ -53,9 +56,9 @@ const UnderConstruction = () => {
         modules={[EffectFade, Navigation, Pagination, Autoplay]}
         className="mySwiper"
       >
-        {data.map((image) => (
-          <SwiperSlide>
-            <img className="swipe-image" src={image} key={image} />
+        {data.map((image, index) => (
+          <SwiperSlide key={index}>
+            <img className="swipe-image" src={image} />
           </SwiperSlide>
         ))}
       </Swiper>

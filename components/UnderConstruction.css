@@ -2,11 +2,18 @@
 
 @font-face {
   font-family: 'Lucette';
+  src: url('/fonts/lucette/font/woff2/Lucette-Regular.woff2') format('woff2'),
+    url('/fonts/lucette/font/woff2/Lucette-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lucette';
   src: url('/fonts/lucette/font/woff2/Lucette-Regularitalic.woff2')
       format('woff2'),
     url('/fonts/lucette/font/woff2/Lucette-Regularitalic.woff') format('woff');
   font-weight: normal;
-  font-style: normal;
+  font-style: italic;
 }
 .UnderContruction {
   width: 100%;
@@ -86,7 +93,7 @@ body {
 }
 .floating-content-2 {
   padding: 0 40px;
-  justify-content: end;
+  justify-content: flex-end;
   display: flex;
   color: #fff;
   font-family: Lucette;
@@ -131,6 +138,15 @@ body {
   position: relative;
   vertical-align: middle;
   width: 54px;
+}
+.italic {
+  font-style: italic;
+}
+.flex {
+  display: flex;
+}
+.gap-10 {
+  gap: 2%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -188,6 +204,7 @@ body {
   .floating-content,
   .floating-content-2 {
     font-size: 12vw;
+    line-height: 115% !important;
   }
   .footer .inner-container {
     padding: 54px 48px 104px;
@@ -207,18 +224,22 @@ body {
 
 @media only screen and (max-width: 1024px) {
   .floating-content {
-    font-size: 18vw;
+    font-size: 17vw;
     padding: 0px;
-    line-height: 130%;
+    line-height: 110%;
     text-align: center;
   }
   .floating-content-2 {
-    font-size: 18vw;
+    font-size: 17vw;
     justify-content: center;
-    line-height: 130%;
+    line-height: 110%;
   }
 }
-
+@media only screen and (max-width: 850px) {
+  .floating-content.flex {
+    flex-direction: column;
+  }
+}
 @media only screen and (max-width: 768px) {
   .container-floating {
     padding: 0;
@@ -265,8 +286,27 @@ body {
     text-align: center;
   }
 }
-
+@media only screen and (max-width: 320px) {
+  .floating-content,
+  .floating-content-2 {
+    font-size: 17vw;
+    line-height: 100%;
+    justify-content: center;
+  }
+}
 /* Styles for screens with a maximum height or less */
+@media screen and (max-height: 600px) {
+  .tagline {
+    margin-top: 0;
+  }
+  .left {
+    margin-bottom: 12px;
+  }
+  .floating-header {
+    top: 16px;
+  }
+}
+
 @media screen and (max-height: 672px) {
   .footer .inner-container {
     padding: 16px 32px 32px;
@@ -280,7 +320,8 @@ body {
 @media screen and (max-height: 880px) and (min-width: 1024px) {
   .floating-content,
   .floating-content-2 {
-    font-size: 15vw;
+    font-size: 12vw;
+    line-height: 110% !important;
   }
   .floating-content-2 {
     justify-content: right;
