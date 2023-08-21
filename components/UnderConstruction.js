@@ -31,7 +31,7 @@ const UnderConstruction = () => {
           </div>
         </div>
         <div className="floating-content-wrapper user-select-none">
-          <div className="floating-content">Were Making</div>
+          <div className="floating-content">We're Making</div>
           <div className="floating-content-2">Something</div>
         </div>
         <div className="footer">
