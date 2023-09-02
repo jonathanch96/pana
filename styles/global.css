@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.cdnfonts.com/css/uncut-sans');
+
+@font-face {
+  font-family: 'Lucette';
+  src: url('/fonts/lucette/font/woff2/Lucette-Regular.woff2') format('woff2'),
+    url('/fonts/lucette/font/woff2/Lucette-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lucette';
+  src: url('/fonts/lucette/font/woff2/Lucette-Regularitalic.woff2')
+      format('woff2'),
+    url('/fonts/lucette/font/woff2/Lucette-Regularitalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Snell Roundhand';
+  src: url('/fonts/snell-roundhand/SnellBT-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+.ProductContainer {
+  position: relative;
+}
+
+.ProductContainer .next-arrow {
+  top: 40%; /* Position the element at the vertical center of its parent */
+  transform: translate(0, -50%);
+  right: -20px;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  z-index: 20;
+}
+.ProductContainer .prev-arrow {
+  left: -20px;
+  top: 40%; /* Position the element at the vertical center of its parent */
+  transform: translate(0, -50%);
+  position: absolute;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  z-index: 20;
+}
+
+body {
+  margin: 0;
+}
