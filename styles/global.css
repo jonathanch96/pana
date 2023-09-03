@@ -25,11 +25,11 @@
   font-weight: normal;
   font-style: normal;
 }
-.ProductContainer {
+.ProductSlider {
   position: relative;
 }
 
-.ProductContainer .next-arrow {
+.ProductSlider .next-arrow {
   top: 40%; /* Position the element at the vertical center of its parent */
   transform: translate(0, -50%);
   right: -20px;
@@ -40,7 +40,7 @@
   height: 35px;
   z-index: 20;
 }
-.ProductContainer .prev-arrow {
+.ProductSlider .prev-arrow {
   left: -20px;
   top: 40%; /* Position the element at the vertical center of its parent */
   transform: translate(0, -50%);

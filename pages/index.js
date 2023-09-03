@@ -1,12 +1,19 @@
-import ProductContainer from '@/components/home/ProductContainer'
-import '../styles/global.css'
-import SocialContainer from '@/components/layouts/SocialContainer'
-import HeaderContainer from '@/components/layouts/HeaderContainer'
+import Banner from '@/components/home/Banner'
+import ProductSlider from '@/components/home/ProductSlider'
+import Tagline from '@/components/home/Tagline'
+import HomeHeaderContainer from '@/components/layouts/HomeHeaderContainer'
+import Layout from '@/components/layouts/Layout'
+import Content from '@/components/shared/Content'
 const HomePage = () => {
   return (
-    <>
-      <HeaderContainer />
-    </>
+    <Layout source="home">
+      <Banner />
+      <Content className="text-sm font-uncut font-semibold ml-50px">
+        Suggested Scents
+      </Content>
+      <ProductSlider />
+      <Tagline />
+    </Layout>
   )
 }
 

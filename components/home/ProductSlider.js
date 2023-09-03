@@ -11,7 +11,7 @@ import ProductCard from '../shared/ProductCard'
 import SeeAllProductCard from '../shared/SeeAllProductCard'
 import { useCallback, useRef } from 'react'
 
-const ProductContainer = (props) => {
+const ProductSlider = (props) => {
   const sliderRef = useRef(null)
   const handlePrev = useCallback(() => {
     if (!sliderRef.current) return
@@ -24,11 +24,11 @@ const ProductContainer = (props) => {
   }, [])
 
   return (
-    <div className="ProductContainer ml-50px mr-50px">
+    <div className="ProductSlider ml-50px mr-50px mb-50px">
       <Swiper
         ref={sliderRef}
         slidesPerView={4}
-        spaceBetween={30}
+        spaceBetween={20}
         className="mySwiper"
       >
         <SwiperSlide>
@@ -81,4 +81,4 @@ const ProductContainer = (props) => {
   )
 }
 
-export default ProductContainer
+export default ProductSlider

@@ -1,13 +1,18 @@
-import FooterContainer from './FooterContainer'
+import '../../styles/global.css'
+import Content from '../shared/Content'
+import Footer from './Footer'
+import Header from './Header'
 import HomeHeaderContainer from './HomeHeaderContainer'
 
 const Layout = (props) => {
   return (
     <div>
       {props.source == 'home' && <HomeHeaderContainer />}
-      {props.source != 'home' && <Headers />}
+      {props.source != 'home' && <Header />}
       {props.children}
-      <FooterContainer />
+      <Content>
+        <Footer />
+      </Content>
     </div>
   )
 }
