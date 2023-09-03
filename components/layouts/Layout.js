@@ -13,6 +13,7 @@ const Layout = (props) => {
       <Content>
         <Footer />
       </Content>
+      <div id="modal-root"></div>
     </div>
   )
 }
