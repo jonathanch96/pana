@@ -25,6 +25,7 @@ module.exports = {
         '54px': '54px',
         '83px': '83px',
         '93px': '93px',
+        '106px': '106px',
         '146px': '146px',
         '164px': '164px',
         '200px': '200px',
@@ -35,6 +36,7 @@ module.exports = {
       },
       colors: {
         customGray: '#D9D9D9',
+        customOrange: '#E83C00'
       },
     },
   },

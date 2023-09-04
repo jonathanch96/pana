@@ -1,6 +1,8 @@
 import Layout from '@/components/layouts/Layout'
 import DetailContainer from '@/components/product_detail/DetailContainer'
 import ImageContainer from '@/components/product_detail/ImageContainer'
+import ProductContainer from '@/components/products/ProductContainer'
+import Content from '@/components/shared/Content'
 
 const PerfumeDetailPage = () => {
   return (
@@ -9,6 +11,10 @@ const PerfumeDetailPage = () => {
         <ImageContainer />
         <DetailContainer />
       </div>
+      <Content className="text-sm font-uncut font-semibold ml-50px">
+        Suggested Scents
+      </Content>
+      <ProductContainer />
     </Layout>
   )
 }
