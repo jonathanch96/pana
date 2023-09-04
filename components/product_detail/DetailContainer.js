@@ -14,7 +14,13 @@ const DetailContainer = () => {
         glow. <br />
         is about self-love, which only you can control, not anyone else.
       </div>
-      <Link href="#" target="_blank" className="w-full pt-5 pb-5 uppercase bg-customOrange text-white">Buy Now</Link>
+      <Link
+        href="#"
+        target="_blank"
+        className="w-full pt-5 pb-5 uppercase bg-customOrange text-white"
+      >
+        Buy Now
+      </Link>
     </div>
   )
 }
