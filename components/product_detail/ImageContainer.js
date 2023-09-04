@@ -1,4 +1,5 @@
 import ImageItem from './ImageItem'
+import ImageMain from './ImageMain'
 
 const ImageContainer = () => {
   return (
@@ -36,7 +37,7 @@ const ImageContainer = () => {
         />
       </div>
       <div className="col-span-10">
-        <ImageItem
+        <ImageMain
           src="https://res.cloudinary.com/decwwfkpi/image/upload/v1693755179/products/dummy_detail_1_mtm6ky.png"
           alt="Image"
           className="w-full h-full"
