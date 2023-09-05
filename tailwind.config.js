@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
+        '32px': '32px',
         '60px': '60px',
         '80px': '80px',
         '100px': '100px',
@@ -23,20 +24,26 @@ module.exports = {
         '30px': '30px',
         '50px': '50px',
         '54px': '54px',
+        '60px': '60px',
         '83px': '83px',
         '93px': '93px',
+        '100px': '100px',
         '106px': '106px',
         '146px': '146px',
+        '151px': '151px',
         '164px': '164px',
         '200px': '200px',
         '206px': '206px',
+        '213px': '213px',
         '304px': '304px',
         '400px': '400px',
+        '517px': '517px',
         '658px': '658px',
+        '1000px': '1000px',
       },
       colors: {
         customGray: '#D9D9D9',
-        customOrange: '#E83C00'
+        customOrange: '#E83C00',
       },
     },
   },

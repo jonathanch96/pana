@@ -8,7 +8,6 @@ const HomeHeaderContainer = () => {
       // Set a scroll threshold at which you want the component to become fixed
       const scrollThreshold = 110 // Adjust this value to your desired height
 
-      console.log(window.scrollY)
       // Check the current scroll position
       if (window.scrollY > scrollThreshold) {
         setIsFixed(true)

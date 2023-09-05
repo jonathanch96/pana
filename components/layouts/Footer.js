@@ -6,7 +6,7 @@ const Footer = () => {
       <SocialContainer />
       <img
         className="w-full mt-146px mb-146px"
-        src="https://res.cloudinary.com/decwwfkpi/image/upload/v1693719333/footer_xrf6sq.png"
+        src="https://res.cloudinary.com/decwwfkpi/image/upload/v1693918335/footer/RUNNING-TEXT_1_iyzlxc.gif"
         alt="Footer Image"
       />
       <div className="flex justify-between text-sm text-customGray font-normal font-uncut mr-50px ml-50px mb-83px">

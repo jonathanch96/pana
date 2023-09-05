@@ -1,7 +1,11 @@
 const Tagline = () => {
   return (
     <div className="relative">
-      <img src="https://res.cloudinary.com/decwwfkpi/image/upload/v1693719146/background_s2u1gp.png" />
+      <img
+        className="w-full"
+        alt="Homepage Tagline"
+        src="https://res.cloudinary.com/decwwfkpi/image/upload/v1693719146/background_s2u1gp.png"
+      />
       <div className="z-index-30 w-full text-120px absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
         <div>
           <span className="font-snell text-120px">a&nbsp;Different</span>

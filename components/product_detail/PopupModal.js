@@ -7,6 +7,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import { useCallback, useEffect, useRef, useState } from 'react'
+import Image from 'next/image'
 
 const PopupModal = (props) => {
   const [currentPage, setCurrentPage] = useState(0)
@@ -28,10 +29,18 @@ const PopupModal = (props) => {
     }
   }, [])
 
+  useEffect(() => {
+    console.log(props.slideTo)
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideTo(props.slideTo)
+      setCurrentPage(swiperRef.current.swiper.realIndex + 1)
+    }
+  }, [props.openModal])
+
   return (
     props.openModal && (
       <div className="fixed inset-0 flex items-center justify-center z-50">
-        <div className="fixed inset-0 bg-black opacity-50"></div>
+        <div className="fixed inset-0 bg-black opacity-80"></div>
 
         <div className="PopupModal relative rounded-lg w-full md:w-2/6 ">
           <Swiper
@@ -45,20 +54,15 @@ const PopupModal = (props) => {
               setTotalPage(swiper.slides.length)
             }}
           >
-            <SwiperSlide>
-              <img
-                className="mx-auto"
-                src="https://res.cloudinary.com/decwwfkpi/image/upload/v1693652520/products/Product%201/01562db9adb371ccaf603bd304eb166a_ofd7iz.png"
-                alt="Product Detail 1"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                className="mx-auto"
-                src="https://res.cloudinary.com/decwwfkpi/image/upload/v1693652520/products/Product%201/01562db9adb371ccaf603bd304eb166a_ofd7iz.png"
-                alt="Product Detail 1"
-              />
-            </SwiperSlide>
+            {props.images.map((img, index) => (
+              <SwiperSlide key={'slide' + index}>
+                <img
+                  className="mx-auto"
+                  src={img}
+                  alt={'Product Detail ' + index}
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
           <div className="prev-arrow" onClick={handlePrev}>
             <svg
@@ -94,6 +98,16 @@ const PopupModal = (props) => {
             {currentPage} / {totalPage}
           </div>
         </div>
+        <Image
+          width={20}
+          height={20}
+          alt="close"
+          onClick={() => props.setOpenModal(false)}
+          src={
+            'https://res.cloudinary.com/dsqneisaz/image/upload/f_auto/v1691029162/Icon/close_kroplr.svg'
+          }
+          className="absolute top-5 right-5"
+        />
       </div>
     )
   )
