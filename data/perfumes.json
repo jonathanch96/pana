@@ -1,0 +1,28 @@
+[
+  {
+    "slug": "pana-product-1",
+    "name": "Pana Product 1",
+    "price": "IDR 200K",
+    "main_image": "https://res.cloudinary.com/decwwfkpi/image/f_auto/upload/v1693652520/products/Product%201/01562db9adb371ccaf603bd304eb166a_ofd7iz.png",
+    "description": "Eau de Parfum ( ℮ 60 ml / 2 fl. oz. )",
+    "fragrance_detail": {
+      "top": "Apple, Lemon, Watermelon, Spearmint",
+      "middle": "Lavender, Clove Indonesia, Elemi, Granium",
+      "base": "Vanilla, Tonka Bean, Moss, Patchouli Indonesia"
+    },
+    "quote": "It's time to make everyone blown away. Your time to shine. Your time to glow. <br>is about self-love, which only you can control, not anyone else.",
+    "tagline": {
+      "banner": "https://res.cloudinary.com/decwwfkpi/image/upload/v1693758446/products/Product%201/fb081cc66137fd39ff67d45c0f0efedc_ctnskm.jpg",
+      "description": "<div class=''>LOOK DEEP <span class='font-snell text-5xl'>&nbsp;Into Nature</span></div><div class='ml-54px -mt-2.5'>AND THEN YOU</div><div class='-mt-2.5 text-5xl font-snell mr-146px'>Will Understand</div><div class='-mt-2.5 ml-83px'>EVERYTHING <span class='font-snell text-5xl'>&nbsp;Better</span></div>"
+    },
+    "images": [
+      "https://res.cloudinary.com/decwwfkpi/image/upload/v1693755179/products/Product%201/dummy_detail_1_mtm6ky.png",
+      "https://res.cloudinary.com/decwwfkpi/image/upload/v1693921191/products/Product%201/product_detail_2_rfazjn.png",
+      "https://res.cloudinary.com/decwwfkpi/image/upload/v1693921195/products/Product%201/product_detail_3_atsq9e.png",
+      "https://res.cloudinary.com/decwwfkpi/image/upload/v1693921199/products/Product%201/product_detail_4_w2zhnf.png",
+      "https://res.cloudinary.com/decwwfkpi/image/upload/v1693921186/products/Product%201/product_detail_5_sfpbxm.png",
+      "https://res.cloudinary.com/decwwfkpi/image/upload/v1693921187/products/Product%201/product_detail_6_kkphm1.png"
+    ],
+    "buy_link": "#"
+  }
+]

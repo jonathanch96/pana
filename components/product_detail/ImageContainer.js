@@ -4,17 +4,10 @@ import ImageMain from './ImageMain'
 import PopupPortal from '../shared/PopupPortal'
 import PopupModal from './PopupModal'
 
-const ImageContainer = () => {
+const ImageContainer = (props) => {
   const [openModal, setOpenModal] = useState(false)
   const [pointer, setPointer] = useState(0)
-  const data = [
-    'https://res.cloudinary.com/decwwfkpi/image/upload/v1693755179/products/dummy_detail_1_mtm6ky.png',
-    'https://res.cloudinary.com/decwwfkpi/image/upload/v1693755179/products/dummy_detail_1_mtm6ky.png',
-    'https://res.cloudinary.com/decwwfkpi/image/upload/v1693755179/products/dummy_detail_1_mtm6ky.png',
-    'https://res.cloudinary.com/decwwfkpi/image/upload/v1693755179/products/dummy_detail_1_mtm6ky.png',
-    'https://res.cloudinary.com/decwwfkpi/image/upload/v1693755179/products/dummy_detail_1_mtm6ky.png',
-    'https://res.cloudinary.com/decwwfkpi/image/upload/v1693755179/products/dummy_detail_1_mtm6ky.png',
-  ]
+  const data = props.perfume.images
   return (
     <>
       <div className="grid grid-cols-12 gap-5">
@@ -42,7 +35,12 @@ const ImageContainer = () => {
         </div>
       </div>
       <PopupPortal>
-        <PopupModal images={data}  openModal={openModal} setOpenModal={setOpenModal} slideTo={pointer}/>
+        <PopupModal
+          images={data}
+          openModal={openModal}
+          setOpenModal={setOpenModal}
+          slideTo={pointer}
+        />
       </PopupPortal>
     </>
   )
