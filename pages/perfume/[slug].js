@@ -1,7 +1,7 @@
 import Layout from '@/components/layouts/Layout'
-import DetailContainer from '@/components/product_detail/DetailContainer'
-import ImageContainer from '@/components/product_detail/ImageContainer'
-import ProductContainer from '@/components/products/ProductContainer'
+import DetailContainer from '@/components/perfume_detail/DetailContainer'
+import ImageContainer from '@/components/perfume_detail/ImageContainer'
+import PerfumeContainer from '@/components/perfumes/PerfumeContainer'
 import Content from '@/components/shared/Content'
 import { useRouter } from 'next/router'
 import perfumes from '../../data/perfumes.json'
@@ -19,7 +19,7 @@ const PerfumeDetailPage = ({ perfume }) => {
       <Content className="text-sm font-uncut font-semibold ml-50px">
         Suggested Scents
       </Content>
-      <ProductContainer />
+      <PerfumeContainer />
     </Layout>
   )
 }

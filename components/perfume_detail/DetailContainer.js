@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import FragranceContainer from './FragranceContainer'
-import ProductTagline from './ProductTagline'
+import PerfumeTagline from './PerfumeTagline'
 import RenderHTMLFromJSON from '../shared/RenderHTMLFromJSON'
 
 const DetailContainer = (props) => {
@@ -11,7 +11,7 @@ const DetailContainer = (props) => {
         {props.perfume.price}
       </div>
       <div className="font-normal text-sm">{props.perfume.description}</div>
-      <ProductTagline tagline={props.perfume.tagline} />
+      <PerfumeTagline tagline={props.perfume.tagline} />
       <FragranceContainer fragrance_detail={props.perfume.fragrance_detail} />
       <div className="font-normal">
         <RenderHTMLFromJSON htmlContent={props.perfume.quote} />

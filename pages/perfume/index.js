@@ -1,10 +1,9 @@
 import Layout from '@/components/layouts/Layout'
-import ProductContainer from '@/components/products/ProductContainer'
-
+import PerfumeContainer from '@/components/perfumes/PerfumeContainer'
 const PerfumePage = () => {
   return (
     <Layout>
-      <ProductContainer />
+      <PerfumeContainer />
     </Layout>
   )
 }

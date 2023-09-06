@@ -1,5 +1,5 @@
 import Banner from '@/components/home/Banner'
-import ProductSlider from '@/components/home/ProductSlider'
+import PerfumeSlider from '@/components/home/PerfumeSlider'
 import Tagline from '@/components/home/Tagline'
 import HomeHeaderContainer from '@/components/layouts/HomeHeaderContainer'
 import Layout from '@/components/layouts/Layout'
@@ -11,7 +11,7 @@ const HomePage = () => {
       <Content className="text-sm font-uncut font-semibold ml-50px">
         Suggested Scents
       </Content>
-      <ProductSlider />
+      <PerfumeSlider />
       <Tagline />
     </Layout>
   )

@@ -1,6 +1,6 @@
 import RenderHTMLFromJSON from '../shared/RenderHTMLFromJSON'
 
-const ProductTagline = (props) => {
+const PerfumeTagline = (props) => {
   return (
     <div className="relative ">
       <img className="h-200px w-full object-cover" src={props.tagline.banner} />
@@ -11,4 +11,4 @@ const ProductTagline = (props) => {
   )
 }
 
-export default ProductTagline
+export default PerfumeTagline

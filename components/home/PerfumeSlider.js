@@ -7,11 +7,12 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
-import ProductCard from '../shared/ProductCard'
-import SeeAllProductCard from '../shared/SeeAllProductCard'
+import PerfumeCard from '../shared/PerfumeCard'
+import SeeAllPerfumeCard from '../shared/SeeAllPerfumeCard'
 import { useCallback, useRef } from 'react'
+import data from '../../data/perfumes.json'
 
-const ProductSlider = (props) => {
+const PerfumeSlider = (props) => {
   const sliderRef = useRef(null)
   const handlePrev = useCallback(() => {
     if (!sliderRef.current) return
@@ -24,27 +25,20 @@ const ProductSlider = (props) => {
   }, [])
 
   return (
-    <div className="ProductSlider ml-50px mr-50px mb-50px">
+    <div className="PerfumeSlider ml-50px mr-50px mb-50px">
       <Swiper
         ref={sliderRef}
         slidesPerView={4}
         spaceBetween={20}
         className="mySwiper"
       >
+        {data.map((perfume, index) => (
+          <SwiperSlide key={'PerfumeSlider' + index}>
+            <PerfumeCard perfume={perfume} />
+          </SwiperSlide>
+        ))}
         <SwiperSlide>
-          <ProductCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <SeeAllProductCard />
+          <SeeAllPerfumeCard />
         </SwiperSlide>
       </Swiper>
       <div className="prev-arrow" onClick={handlePrev}>
@@ -81,4 +75,4 @@ const ProductSlider = (props) => {
   )
 }
 
-export default ProductSlider
+export default PerfumeSlider
