@@ -16,7 +16,7 @@ const PerfumeDetailPage = ({ perfume }) => {
         <ImageContainer perfume={perfume} />
         <DetailContainer perfume={perfume} />
       </div>
-      <Content className="text-sm font-uncut font-semibold ml-50px">
+      <Content className="text-sm font-uncut font-semibold ml-4 lg:ml-50px">
         Suggested Scents
       </Content>
       <PerfumeContainer />

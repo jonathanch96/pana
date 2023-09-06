@@ -28,8 +28,21 @@ const PerfumeSlider = (props) => {
     <div className="PerfumeSlider ml-50px mr-50px mb-50px">
       <Swiper
         ref={sliderRef}
-        slidesPerView={4}
         spaceBetween={20}
+        breakpoints={{
+          400: {
+            width: 400,
+            slidesPerView: 2,
+          },
+          768: {
+            width: 768,
+            slidesPerView: 3,
+          },
+          1024: {
+            width: 1024,
+            slidesPerView: 4,
+          },
+        }}
         className="mySwiper"
       >
         {data.map((perfume, index) => (

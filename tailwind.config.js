@@ -8,12 +8,21 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
+        '12px': '12px',
+        '16px': '16px',
+        '18px': '18px',
+        '20px': '20px',
+        '24px': '24px',
         '32px': '32px',
+        '48px': '48px',
         '60px': '60px',
         '80px': '80px',
         '100px': '100px',
         '120px': '120px',
         '140px': '140px',
+      },
+      screens: {
+        mobile: '400px',
       },
       fontFamily: {
         snell: ['Snell Roundhand', 'cursive'],

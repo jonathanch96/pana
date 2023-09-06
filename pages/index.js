@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <Layout source="home">
       <Banner />
-      <Content className="text-sm font-uncut font-semibold ml-50px">
+      <Content className="text-sm font-uncut font-semibold ml-4 lg:ml-50px">
         Suggested Scents
       </Content>
       <PerfumeSlider />

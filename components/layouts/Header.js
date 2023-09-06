@@ -40,7 +40,7 @@ const Header = () => {
       <Navbar.Brand href="/">
         <img
           src="https://res.cloudinary.com/decwwfkpi/image/upload/v1693705256/Pana_Logo_Pack-04_3_oimvyt.png"
-          className="mr-3 h-11 sm:h-9"
+          className="mr-3 h-8 sm:h-9"
           alt="Pana Logo"
         />
       </Navbar.Brand>

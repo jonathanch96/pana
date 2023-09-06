@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Social = (props) => {
   return (
-    <div className="uppercase font-uncut text-center border-black border pb-4 pt-4">
+    <div className="uppercase font-uncut text-center border-black border pb-2 pt-2 sm:pb-4 sm:pt-4">
       <Link
         href={props.url}
         target="_blank"
