@@ -4,7 +4,7 @@ const ImageMain = (props) => {
       <img className={props.className} src={props.src} alt={props.alt} />
       <svg
         onClick={() => props.setOpenModal(true)}
-        className="absolute right-30px top-5 cursor-pointer"
+        className="absolute right-3 lg:right-30px top-3 lg:top-5 cursor-pointer aspect-square w-7 lg:w-11"
         xmlns="http://www.w3.org/2000/svg"
         width="43"
         height="44"

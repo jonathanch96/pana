@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const PerfumeCard = (props) => {
   return (
-    <Link href={'perfume/' + props.perfume.slug}>
+    <Link href={'/perfume/' + props.perfume.slug}>
       <div className="flex flex-col gap-30px font-uncut group hover:font-snell">
         <img
           className="h-auto object-cover max-h-400px w-full"

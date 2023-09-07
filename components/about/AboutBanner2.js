@@ -17,7 +17,7 @@ const AboutBanner2 = () => {
             Life in <span className="font-snell font-medium">Indonesia</span>
           </div>
           <Image
-            className="aspect-auto h-auto w-100px 2xl:w-213px"
+            className="aspect-auto h-auto w-50px sm:w-100px 2xl:w-213px"
             src={data.image_2}
             width={213}
             height={80}
@@ -33,7 +33,7 @@ const AboutBanner2 = () => {
           <span className="font-snell font-medium">&nbsp;Inseparable,</span>
         </div>
         <div className="flex gap-2.5 sm:gap-5 lg:gap-60px items-center justify-center">
-          <div className="w-100px h-100px"></div>
+          <div className="h-100px w-50px sm:w-100px 2xl:w-213px"></div>
           <div>
             <div>
               When <span className="font-snell font-medium">We Talk</span> about
@@ -43,7 +43,7 @@ const AboutBanner2 = () => {
             </div>
           </div>
           <Image
-            className="aspect-auto h-auto w-100px 2xl:w-213px"
+            className="aspect-auto h-auto w-50px sm:w-100px 2xl:w-213px"
             src={data.image_3}
             width={213}
             height={80}
@@ -58,11 +58,11 @@ const AboutBanner2 = () => {
             height={100}
             alt="About Image 4"
           />
-          <div className="w-250px lg:w-517px text-lg lg:text-2xl flex">
+          <div className="w-250px lg:w-517px text-sm md:text-lg lg:text-2xl flex">
             Even the scents we know oftengive an impression, or come from and
             are made from what is in Nature.
           </div>
-          <div className="w-100px 2xl:w-213px h-100px"></div>
+          <div className="w-50px sm:w-100px 2xl:w-213px h-100px"></div>
         </div>
       </div>
       <div className="z-20 w-full custom-text-80px absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">

@@ -22,6 +22,7 @@ module.exports = {
         '100px': '100px',
         '120px': '120px',
         '140px': '140px',
+        '160px': '160px',
       },
       screens: {
         xsm: '400px',
@@ -51,6 +52,8 @@ module.exports = {
         '250px': '250px',
         '304px': '304px',
         '400px': '400px',
+        '470px': '470px',
+        '490px': '490px',
         '517px': '517px',
         '658px': '658px',
         '1000px': '1000px',

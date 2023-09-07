@@ -10,27 +10,25 @@ const ImageContainer = (props) => {
   const data = props.perfume.images
   return (
     <>
-      <div className="grid grid-cols-12 gap-5">
-        <div className="flex flex-col col-span-2 gap-5">
+      <div className="flex flex-col-reverse lg:grid lg:grid-cols-12 gap-5">
+        <div className="grid grid-cols-6 gap-2 lg:flex lg:flex-col lg:col-span-2 lg:gap-5">
           {data.map((d, index) => (
             <ImageItem
               setPointer={() => setPointer(index)}
               key={'image' + index}
               src={d}
               alt="Image"
-              className={`h-1/6 w-auto ${
-                pointer == index && 'border border-black'
-              }`}
+              className={` w-full ${pointer == index && 'border border-black'}`}
             />
           ))}
         </div>
-        <div className="col-span-10">
+        <div className="w-full lg:col-span-10">
           <ImageMain
             setOpenModal={setOpenModal}
             src={data[pointer]}
             slideTo={pointer}
             alt="Image"
-            className="w-full h-full"
+            className="w-full aspect-[580/700]"
           />
         </div>
       </div>

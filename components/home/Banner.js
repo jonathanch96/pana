@@ -22,24 +22,23 @@ const Banner = () => {
       >
         {data.slider.map((image, index) => (
           <SwiperSlide key={index}>
-            <img className="swipe-image" src={image} />
+            <img
+              className="swipe-image w-full"
+              alt="Swiper Image"
+              src={image}
+            />
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="z-30 w-full custom-text-120px absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
+      <div className="z-30 custom-floating-container custom-text-120px text-white">
         <div>
-          <span className="font-snell custom-text-140px">
-            Creation
-          </span>
+          <span className="font-snell custom-text-140px">Creation</span>
           of the LANGUAGE
         </div>
         <div className="2xl:-mt-83px">OF SCENTS, AND FURTHER</div>
         <div className="2xl:-mt-83px">THAN THAT INVOLVES</div>
         <div className="2xl:-mt-83px">
-          <span className="font-snell custom-text-140px">
-            Feelings
-          </span>
-          & MIND
+          <span className="font-snell custom-text-140px">Feelings</span>& MIND
         </div>
       </div>
     </div>
