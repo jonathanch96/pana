@@ -9,11 +9,13 @@ module.exports = {
     extend: {
       fontSize: {
         '12px': '12px',
+        '14px': '14px',
         '16px': '16px',
         '18px': '18px',
         '20px': '20px',
         '24px': '24px',
         '32px': '32px',
+        '40px': '40px',
         '48px': '48px',
         '60px': '60px',
         '80px': '80px',
@@ -22,7 +24,7 @@ module.exports = {
         '140px': '140px',
       },
       screens: {
-        mobile: '400px',
+        xsm: '400px',
       },
       fontFamily: {
         snell: ['Snell Roundhand', 'cursive'],
@@ -38,12 +40,15 @@ module.exports = {
         '93px': '93px',
         '100px': '100px',
         '106px': '106px',
+        '130px': '130px',
         '146px': '146px',
         '151px': '151px',
         '164px': '164px',
+        '170px': '170px',
         '200px': '200px',
         '206px': '206px',
         '213px': '213px',
+        '250px': '250px',
         '304px': '304px',
         '400px': '400px',
         '517px': '517px',

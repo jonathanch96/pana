@@ -83,3 +83,18 @@ body {
   color: white;
   bottom: -4px;
 }
+
+@layer components {
+  .custom-text-80px {
+    @apply text-12px xsm:text-16px md:text-32px lg:text-48px xl:text-60px 2xl:text-80px;
+  }
+  .custom-text-100px {
+    @apply text-14px xsm:text-24px md:text-40px lg:text-60px xl:text-80px 2xl:text-100px;
+  }
+  .custom-text-120px {
+    @apply text-16px xsm:text-32px md:text-60px lg:text-80px xl:text-100px 2xl:text-120px;
+  }
+  .custom-text-140px {
+    @apply text-20px xsm:text-48px md:text-80px lg:text-100px xl:text-120px 2xl:text-140px;
+  }
+}

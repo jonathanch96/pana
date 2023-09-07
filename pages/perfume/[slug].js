@@ -12,7 +12,7 @@ const PerfumeDetailPage = ({ perfume }) => {
 
   return (
     <Layout>
-      <div className="grid grid-cols-2 mr-50px ml-50px gap-5">
+      <div className="grid grid-cols-2 ml-4 mr-4 lg:mr-50px lg:ml-50px gap-5">
         <ImageContainer perfume={perfume} />
         <DetailContainer perfume={perfume} />
       </div>

@@ -12,7 +12,7 @@ const FlowbiteNavbarRootTheme = {
     off: '',
   },
   inner: {
-    base: 'mx-auto flex flex-wrap items-center justify-between h-20',
+    base: 'mx-auto flex flex-wrap items-center justify-between md:h-20',
     fluid: {
       on: '',
       off: 'container',

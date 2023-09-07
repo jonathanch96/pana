@@ -25,7 +25,7 @@ const PerfumeSlider = (props) => {
   }, [])
 
   return (
-    <div className="PerfumeSlider ml-50px mr-50px mb-50px">
+    <div className="PerfumeSlider ml-4 mr-4 mb-4 lg:ml-50px lg:mr-50px lg:mb-50px">
       <Swiper
         ref={sliderRef}
         spaceBetween={20}
@@ -39,7 +39,6 @@ const PerfumeSlider = (props) => {
             slidesPerView: 3,
           },
           1024: {
-            width: 1024,
             slidesPerView: 4,
           },
         }}
