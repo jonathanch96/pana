@@ -5,8 +5,8 @@ import RenderHTMLFromJSON from '../shared/RenderHTMLFromJSON'
 
 const DetailContainer = (props) => {
   return (
-    <div className="flex flex-col gap-4 lg:gap-0 lg:justify-between font-uncut text-black text-center">
-      <div className="mt-5 lg:mt-0 text-2xl lg:text-5xl font-bold uppercase">{props.perfume.name}</div>
+    <div className="flex flex-col gap-4 md:gap-0 md:justify-between font-uncut text-black text-center">
+      <div className="mt-5 md:mt-0 text-2xl md:text-3xl xl:text-5xl font-bold uppercase">{props.perfume.name}</div>
       <div className="font-semibold text-sm uppercase">
         {props.perfume.price}
       </div>

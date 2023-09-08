@@ -12,11 +12,11 @@ const PerfumeDetailPage = ({ perfume }) => {
 
   return (
     <Layout>
-      <div className="flex flex-col lg:grid lg:grid-cols-2 ml-4 mr-4 lg:mr-50px lg:ml-50px gap-5">
+      <div className="flex flex-col md:grid md:grid-cols-2 ml-4 mr-4 md:mr-50px md:ml-50px gap-5">
         <ImageContainer perfume={perfume} />
         <DetailContainer perfume={perfume} />
       </div>
-      <Content className="text-sm font-uncut font-semibold ml-4 lg:ml-50px">
+      <Content className="text-sm font-uncut font-semibold ml-4 md:ml-50px">
         Suggested Scents
       </Content>
       <PerfumeContainer />
@@ -34,7 +34,7 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: true,
+    fallback: false,
   }
 }
 

@@ -42,28 +42,7 @@ const PopupModal = (props) => {
       <div className="fixed inset-0 flex items-center justify-center z-50">
         <div className="fixed inset-0 bg-black opacity-80"></div>
 
-        <div className="PopupModal relative rounded-lg w-full md:w-2/6 ">
-          <Swiper
-            pagination={{
-              type: 'fraction',
-            }}
-            className="mySwiper"
-            ref={swiperRef}
-            onSwiper={(swiper) => {
-              setCurrentPage(swiper.realIndex + 1)
-              setTotalPage(swiper.slides.length)
-            }}
-          >
-            {props.images.map((img, index) => (
-              <SwiperSlide key={'slide' + index}>
-                <img
-                  className="mx-auto"
-                  src={img}
-                  alt={'Product Detail ' + index}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+        <div className="flex relative w-full items-center justify-center gap-2 sm:gap-5">
           <div className="prev-arrow" onClick={handlePrev}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -79,6 +58,30 @@ const PopupModal = (props) => {
               />
             </svg>
           </div>
+          <div className="PopupModal relative rounded-lg  w-4/6 md:w-3/6 xl:w-2/6 ">
+            <Swiper
+              pagination={{
+                type: 'fraction',
+              }}
+              className="mySwiper"
+              ref={swiperRef}
+              onSwiper={(swiper) => {
+                setCurrentPage(swiper.realIndex + 1)
+                setTotalPage(swiper.slides.length)
+              }}
+            >
+              {props.images.map((img, index) => (
+                <SwiperSlide key={'slide' + index}>
+                  <img
+                    className="mx-auto aspect-[557/718] object-cover"
+                    src={img}
+                    alt={'Product Detail ' + index}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+
           <div className="next-arrow" onClick={handleNext}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -94,10 +97,12 @@ const PopupModal = (props) => {
               />
             </svg>
           </div>
-          <div className="pagination font-uncut text-white text-sm -right-10 ">
+
+          <div className="absolute font-uncut text-white text-sm bottom-0 z-30 right-[6%] md:right-[20%] xl:right-[27%]">
             {currentPage} / {totalPage}
           </div>
         </div>
+
         <Image
           width={20}
           height={20}

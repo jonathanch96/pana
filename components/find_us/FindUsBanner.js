@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const FindUsBanner = () => {
   return (
     <div className="relative w-full ">
@@ -11,11 +13,13 @@ const FindUsBanner = () => {
       </div>
       <div className="custom-floating-container custom-text-160px text-white ">
         <div className="lg:pt-10 ">
-          <img
-            alt="Logo"
-            src="https://res.cloudinary.com/decwwfkpi/image/upload/v1691767499/logo_i0rdwh.svg"
-            className="mx-auto w-50px xsm:w-100px lg:w-auto"
-          />
+          <Link href={'/'}>
+            <img
+              alt="Logo"
+              src="https://res.cloudinary.com/decwwfkpi/image/upload/v1691767499/logo_i0rdwh.svg"
+              className="mx-auto w-50px xsm:w-100px lg:w-auto"
+            />
+          </Link>
         </div>
         <div className="lg:-mt-30px">
           Furthering <span className="font-snell">&nbsp;Scents</span>
