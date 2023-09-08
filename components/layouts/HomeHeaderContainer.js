@@ -34,11 +34,6 @@ const HomeHeaderContainer = () => {
           </div>
         </>
       )}
-      {!isFixed && (
-        <div>
-          <Header />
-        </div>
-      )}
     </>
   )
 }
