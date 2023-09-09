@@ -5,7 +5,7 @@ const PerfumeCard = (props) => {
     <Link href={'/perfume/' + props.perfume.slug}>
       <div className="flex flex-col gap-30px font-uncut group hover:font-snell">
         <img
-          className="h-auto object-cover max-h-400px w-full"
+          className="h-auto object-cover max-h-400px w-full aspect-[320/400]"
           src={props.perfume.main_image}
           alt={props.perfume.name + ' Image'}
         />
