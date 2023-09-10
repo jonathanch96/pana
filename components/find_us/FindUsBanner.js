@@ -21,10 +21,13 @@ const FindUsBanner = () => {
             />
           </Link>
         </div>
-        <div className="lg:-mt-30px">
-          Furthering <span className="font-snell">&nbsp;Scents</span>
+        <div className="flex justify-center items-center">
+          <img
+            className=" w-[80%]"
+            src="https://res.cloudinary.com/decwwfkpi/image/upload/v1694278193/vector/find_us_rx7fkw.svg"
+            alt="Find Us Banner"
+          />
         </div>
-        <div className="font-snell -mt-2.5 lg:-mt-83px">of Culture</div>
       </div>
     </div>
   )

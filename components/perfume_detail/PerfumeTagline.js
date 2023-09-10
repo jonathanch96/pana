@@ -1,11 +1,18 @@
-import RenderHTMLFromJSON from '../shared/RenderHTMLFromJSON'
-
 const PerfumeTagline = (props) => {
   return (
-    <div className="relative ">
-      <img className="lg:h-200px w-full object-cover" src={props.tagline.banner} />
-      <div className="z-index-30 custom-floating-container custom-text-120px md:text-lg lg:text-4xl text-white font-uncut">
-        <RenderHTMLFromJSON htmlContent={props.tagline.description} />
+    <div className="relative">
+      <img
+        className="lg:h-200px w-full object-cover"
+        src={props.tagline.banner}
+      />
+      <div className="custom-floating-container custom-text-120px text-white">
+        <div className="flex justify-center items-center">
+          <img
+            className=" w-[90%]"
+            src={props.tagline.description}
+            alt="Perfume Tagline Banner"
+          />
+        </div>
       </div>
     </div>
   )

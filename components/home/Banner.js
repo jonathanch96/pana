@@ -31,14 +31,12 @@ const Banner = () => {
         ))}
       </Swiper>
       <div className="z-30 custom-floating-container custom-text-120px text-white">
-        <div>
-          <span className="font-snell custom-text-140px">Creation</span>
-          of the LANGUAGE
-        </div>
-        <div className="2xl:-mt-83px">OF SCENTS, AND FURTHER</div>
-        <div className="2xl:-mt-83px">THAN THAT INVOLVES</div>
-        <div className="2xl:-mt-83px">
-          <span className="font-snell custom-text-140px">Feelings</span>& MIND
+        <div className="flex justify-center items-center">
+          <img
+            className=" w-[90%]"
+            src="https://res.cloudinary.com/decwwfkpi/image/upload/v1694275992/vector/home_main_cnmbve.svg"
+            alt="Home Banner"
+          />
         </div>
       </div>
     </div>

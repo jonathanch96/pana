@@ -26,6 +26,8 @@ module.exports = {
       },
       screens: {
         xsm: '400px',
+        "3xl": '1800px',
+        "4xl": '2200px',
       },
       fontFamily: {
         snell: ['Snell Roundhand', 'cursive'],
