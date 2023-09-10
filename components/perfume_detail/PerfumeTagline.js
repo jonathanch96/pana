@@ -8,7 +8,7 @@ const PerfumeTagline = (props) => {
       <div className="custom-floating-container custom-text-120px text-white">
         <div className="flex justify-center items-center">
           <img
-            className=" w-[90%]"
+            className="w-[90%] xl:w-[75%]"
             src={props.tagline.description}
             alt="Perfume Tagline Banner"
           />
