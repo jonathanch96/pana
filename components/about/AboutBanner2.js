@@ -9,7 +9,7 @@ const AboutBanner2 = () => {
             <div className="col-start-2 col-end-12 xl:col-start-3 xl:col-end-11 relative">
               <div className="left-0 top-0 absolute flex flex-col items-center justify-between h-full">
                 <Image
-                  className="hidden lg:block aspect-square w-100px lg:ml-[140px] lg:mt-[90px] xl:ml-[100px] xl:mt-[70px] 2xl:ml-[150px] 2xl:mt-[32px]"
+                  className="hidden lg:block aspect-square w-100px lg:ml-[140px] lg:mt-[90px] xl:ml-[100px] xl:mt-[70px] 2xl:ml-[150px] 2xl:mt-[50px]"
                   src={data.image_1}
                   width={100}
                   height={100}
