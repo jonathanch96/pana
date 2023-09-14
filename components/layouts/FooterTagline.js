@@ -11,7 +11,7 @@ const FooterTagline = () => {
   const [flag, setFlag] = useState(true)
   return (
     <>
-      <div className="text-[36px] font-black text-center w-full pt-5 pb-5 mt-[146px] mb-[146px]">
+      <div className="text-[36px]  leading-[60px] font-black text-center w-full pt-5 pb-5 mt-[146px] mb-[146px]">
         CREATING CULTURAL{' '}
         <div
           className={`inline-block w-[300px] text-center ${
@@ -22,7 +22,7 @@ const FooterTagline = () => {
         </div>{' '}
         THROUGH THE{' '}
         <div
-          className={`inline-block w-[482px]  ${
+          className={`inline-block w-[482px] ${
             !flag ? 'font-snell text-[40px]' : 'uppercase'
           }`}
         >
