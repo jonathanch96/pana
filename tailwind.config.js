@@ -27,6 +27,7 @@ module.exports = {
       screens: {
         xsm: '400px',
         "3xl": '1800px',
+        "3.5xl": '2000px',
         "4xl": '2200px',
       },
       fontFamily: {

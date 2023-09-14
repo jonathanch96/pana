@@ -8,7 +8,7 @@ const FindUsSocial = () => {
           <Link
             href={s.url}
             target="_blank"
-            className=" col-start-2 col-end-12 lg:col-start-3 lg:col-end-11 bg-black text-white gap-50px h-10 lg:h-60px flex items-center justify-center "
+            className=" col-start-2 col-end-12 lg:col-start-3 lg:col-end-11 bg-black text-white gap-50px h-10 lg:h-60px flex items-center justify-center uppercase"
           >
             {s.name}
           </Link>

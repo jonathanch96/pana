@@ -10,9 +10,12 @@ const Layout = (props) => {
       {props.source == 'home' && <HomeHeaderContainer />}
       {props.source != 'home' && <DefaultHeaderContainer />}
       {props.children}
-      <Content>
-        <Footer />
-      </Content>
+      {!props.hide_footer && (
+        <Content>
+          <Footer />
+        </Content>
+      )}
+
       <div id="modal-root"></div>
     </div>
   )

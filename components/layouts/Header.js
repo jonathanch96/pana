@@ -36,7 +36,7 @@ const Header = () => {
   }
 
   return (
-    <Navbar theme={FlowbiteNavbarRootTheme} fluid={true} rounded={true}>
+    <Navbar theme={FlowbiteNavbarRootTheme} fluid={true} rounded={false}>
       <Navbar.Brand href="/">
         <img
           src="https://res.cloudinary.com/decwwfkpi/image/upload/v1693705256/Pana_Logo_Pack-04_3_oimvyt.png"
@@ -48,8 +48,9 @@ const Header = () => {
       <Navbar.Collapse theme={FlowbiteNavbarCollapseTheme}>
         <Navbar.Link
           className={
-            isActive('/perfume') &&
-            `font-snell text-black font-black text-xl leading-tight`
+            isActive('/perfume')
+              ? `font-snell text-black font-black text-xl leading-tight`
+              : 'uppercase'
           }
           href="/perfume"
         >
@@ -57,8 +58,9 @@ const Header = () => {
         </Navbar.Link>
         <Navbar.Link
           className={
-            isActive('/about') &&
-            `font-snell text-black font-black text-xl leading-tight`
+            isActive('/about')
+              ? `font-snell text-black font-black text-xl leading-tight`
+              : 'uppercase'
           }
           href="/about"
         >
@@ -66,8 +68,9 @@ const Header = () => {
         </Navbar.Link>
         <Navbar.Link
           className={
-            isActive('/find-us') &&
-            `font-snell text-black font-black text-xl leading-tight`
+            isActive('/find-us')
+              ? `font-snell text-black font-black text-xl leading-tight`
+              : 'uppercase'
           }
           href="/find-us"
         >

@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.cdnfonts.com/css/uncut-sans');
 
 @font-face {
   font-family: 'Lucette';
@@ -24,6 +23,15 @@
   src: url('/fonts/snell-roundhand/SnellBT-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
+}
+@font-face {
+  font-family: 'Uncut Sans';
+  src: url('/fonts/uncut-sans/Uncut-Sans-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  font-family: "Uncut Sans";
 }
 .PerfumeSlider {
   position: relative;
@@ -64,6 +72,13 @@ body {
   align-items: center;
 }
 
+.PerfumeCard .zoom-animation {
+  animation: zoom-in 0.3s ease-in-out;
+}
+
+.slide-animation {
+  transition: all 0.5s ease-in-out;
+}
 
 @layer components {
   /* .prev-arrow{

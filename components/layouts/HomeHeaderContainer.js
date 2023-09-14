@@ -26,14 +26,14 @@ const HomeHeaderContainer = () => {
 
   return (
     <>
-      {isFixed && (
-        <>
-          <div className="w-full h-106px"></div>
-          <div className="fixed w-full top-0 left-0 z-40">
-            <Header />
-          </div>
-        </>
-      )}
+      {isFixed && <div className="w-full h-100px"></div>}
+      <div
+        className={` slide-animation fixed w-full left-0 z-40 ${
+          isFixed ? 'top-0' : '-top-100px'
+        }`}
+      >
+        <Header />
+      </div>
     </>
   )
 }
