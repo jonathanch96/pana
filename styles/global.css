@@ -105,4 +105,7 @@ body {
   .custom-floating-container {
     @apply w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center;
   }
+  .footer-tagline-text{
+    @apply font-snell text-[28px] xl:text-[34px] 2xl:text-[40px]
+  }
 }
