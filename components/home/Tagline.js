@@ -4,7 +4,7 @@ const Tagline = () => {
       <img
         className="w-full"
         alt="Homepage Tagline"
-        src="https://res.cloudinary.com/decwwfkpi/image/upload/f_auto/v1695041079/PANA_GRAPHIC_ASET_ASET_BACKGROUND_ivtftz.svg"
+        src="https://res.cloudinary.com/decwwfkpi/image/upload/f_auto/v1695139443/PANA_GRAPHIC_ASET_ASET_BACKGROUND_2_qtja7b.svg"
       />
       <div className="z-index-30 w-full custom-text-120px absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
         <div className="flex justify-center">
