@@ -16,7 +16,7 @@ const AboutBanner2 = () => {
                   alt="About Image 1"
                 />
                 <Image
-                  className="aspect-auto hidden lg:block h-auto w-213px lg:mb-[150px] xl:mb-[120px] 2xl:mb-[100px]"
+                  className="aspect-[213/80] object-cover object-center hidden lg:block h-auto w-213px lg:mb-[150px] xl:mb-[120px] 2xl:mb-[100px]"
                   src={data.image_3}
                   width={213}
                   height={80}
