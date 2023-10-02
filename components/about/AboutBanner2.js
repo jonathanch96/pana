@@ -72,7 +72,7 @@ const AboutBanner2 = () => {
           <div className="flex gap-2.5 sm:gap-5 lg:gap-60px items-start justify-center">
             <div className="w-[60%] xsm:w-[45%] lg:w-[30%] mb-0.5 mb-2.5">
               <img
-                src="https://res.cloudinary.com/decwwfkpi/image/upload/v1694314144/vector/about_description_3_m8kavu.svg"
+                src="https://res.cloudinary.com/decwwfkpi/image/upload/v1696253485/about/about_description_3_izfcaz.svg"
                 alt="About Image 3"
                 className="w-full"
               />
